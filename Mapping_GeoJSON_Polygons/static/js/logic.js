@@ -33,7 +33,7 @@ let torontoHoods = "https://raw.githubusercontent.com/Byankap/Mapping_Earthquake
 
 
 // Grabbing our GeoJSON data.
-d3.json(torontoData).then(function(data) {
+d3.json(torontoHoods).then(function(data) {
     console.log(data);
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJSON(data).addTo(map);
